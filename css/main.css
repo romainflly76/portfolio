@@ -93,7 +93,13 @@ textarea {
   font-weight: normal;
   font-style: normal;
 }
+#mainNav {
+  transition: 0.4s;
+}
 
+#projects {
+  top: 0;
+}
 #relative {
   position: relative;
   background-image: url("../img/kisspng-gibson-les-paul-studio-gibson-les-paul-special-epi-electric-guitar-5abce7bd401cc7.1102401315223295332626.png");
@@ -139,6 +145,12 @@ h1 {
   right: 0;
   margin: auto;
 }
+h5 {
+  font-size: 10px;
+}
+h3 {
+  font-size: smaller;
+}
 p {
   position: absolute;
   font-size: 20px;
@@ -153,7 +165,7 @@ p {
 #about {
   position: absolute;
   background-color: #ffc703;
-  color: #184e77;
+  color: #27587e;
   width: 50%;
   height: 2.5em;
   top: 83%;
@@ -260,6 +272,18 @@ main {
   background-color: #ffc703;
   height: 160vh;
   margin: 0;
+}
+
+#projets {
+  width: 150vh;
+  height: auto;
+}
+#boutonsLiens {
+  background-color: #ffc703;
+  color: #27587e;
+}
+#projects {
+  justify-content: center;
 }
 /* ==========================================================================
    Helper classes
