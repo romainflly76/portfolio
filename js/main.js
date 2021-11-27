@@ -8,7 +8,7 @@ let imgSites = [
 ];
 let infos = [
   "Projet fil rouge de Formation: site de Banque, JS, REGEX ",
-  "Jeu des paires Memory, Jeu en JS",
+  "Jeu des paires,Jeu du Memory en Java Script",
   "Projet Collectif Site Norimmo formation AFPA",
   "Projet personnel, Site vitrine d'une epicerie de proximité",
   "Projet site web Fan Star Wars, utilisation de AJAX API Swapi",
@@ -25,10 +25,10 @@ function projets() {
     let sourceCards = "img/Projets/" + imgName + ".png";
     console.log(sourceCards);
 
-    cardsProjets.innerHTML += `<div class="col-12 col-sm-6 col-lg-4 mt-5"><div class="card" style="width: 15rem;">
+    cardsProjets.innerHTML += `<div class="col-12 col-sm-6 col-lg-4 my-2 mt-5 mb-5"><div class="card">
             <img class="card-img-top" src="${sourceCards}" alt="Card image cap">
       <div class="card-body">
-      <h5 class="card-title">${infos[i]}</h5>
+      <h5 class="card-title text-center">${infos[i]}</h5>
         <a href="#" id= "boutonsLiens" class="btn">Go somewhere</a>
       </div>
     </div>
@@ -50,13 +50,14 @@ displayNavbar.innerHTML += `<nav class="navbar navbar-expand-lg navbar-light fix
     <ul class="navbar-nav ms-auto my-2 my-lg-0">
       <li class="nav-item"><a class="nav-link text-white" href="index.html">Portfolio</a></li>
       <li class="nav-item"><a class="nav-link text-white" href="#projets">projets</a></li>
-      <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#contact">Mon Profil</a></li>
       <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
     </ul>
   </div>
 </div>
 </nav>`;
 
+// ************************************** SCROLL NAVBAR FIXED + ANIMATION *******************************
 window.onscroll = function () {
   if (document.documentElement.scrollTop > 210) {
     document.getElementById("mainNav").style.background = "#27587e";
