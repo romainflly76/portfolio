@@ -28,7 +28,7 @@ function projets() {
     cardsProjets.innerHTML += `<div class="col-12 col-sm-6 col-lg-4 my-2 mt-5 mb-5"><div class="card">
             <img class="card-img-top" src="${sourceCards}" alt="Card image cap">
       <div class="card-body">
-      <h5 class="card-title text-center">${infos[i]}</h5>
+      <h5 class="card-title">${infos[i]}</h5>
         <a href="#" id= "boutonsLiens" class="btn">Go somewhere</a>
       </div>
     </div>
@@ -49,8 +49,8 @@ displayNavbar.innerHTML += `<nav class="navbar navbar-expand-lg navbar-light fix
   <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav ms-auto my-2 my-lg-0">
       <li class="nav-item"><a class="nav-link text-white" href="index.html">Portfolio</a></li>
-      <li class="nav-item"><a class="nav-link text-white" href="#projets">projets</a></li>
-      <li class="nav-item"><a class="nav-link text-white" href="#contact">Mon Profil</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#projets">Mon Profil</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#contact">Mes Projets</a></li>
       <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
     </ul>
   </div>

@@ -135,34 +135,60 @@ textarea {
   font-family: "barnettregular";
   font-size: 30px;
 }
-#boutonsLiens {
+main {
+  background-color: #fff;
+  height: 100%;
+  margin: 0;
 }
+
 #services i {
   color: #27587e;
 }
 #services > h2 {
   top: 15vh;
 }
+#contact {
+  background-color: #ffc703;
+  padding: 90px 0;
+  height: auto;
+  color: #27587e;
+}
 
+#about {
+  position: absolute;
+  background-color: #ffc703;
+  color: #27587e;
+  width: 50%;
+  height: 2.5em;
+  top: 83%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#profil {
+  background-color: #ffc703;
+  height: auto;
+  padding: 90px 0;
+  color: #27587e;
+}
 .card {
-  /* background-color: #27587e; */
   width: 40vh;
   margin: 0;
-  padding: 0;
   height: auto;
   border: 0ch;
 }
-footer .btn {
-  font-size: 30px;
-}
-footer .fab {
-  color: #fff;
-  font-size: 180%;
-}
-#contact {
+#projets {
   background-color: #fff;
+  width: 150vh;
+  height: auto;
+  margin-top: 15vh;
+}
+#boutonsLiens {
+  background-color: #ffc703;
+  color: #27587e;
 }
 
+/* *********************** Polices Title / H1, H2, H3, H4, H5, P **************** */
 h1 {
   position: absolute;
   font-family: "barnettregular";
@@ -198,20 +224,24 @@ hr {
   border: 0;
   opacity: 0.25;
 }
-#about {
-  position: absolute;
-  background-color: #ffc703;
-  color: #27587e;
-  width: 50%;
-  height: 2.5em;
-  top: 83%;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
+
+/* *********************** FOOTER ******************************* */
 #foot {
   color: #ffc703;
 }
+footer {
+  background-color: #27587e;
+}
+footer .btn {
+  font-size: 30px;
+}
+footer .fab {
+  color: #fff;
+  font-size: 180%;
+}
+
+/* ***********************Regles Media Querries ****************** */
+
 @media screen and (min-width: 500px) {
   #absolute {
     position: absolute;
@@ -304,31 +334,6 @@ hr {
   }
 }
 
-main {
-  background-color: #fff;
-  height: 100%;
-  margin: 0;
-}
-#profil {
-  background-color: #ffc703;
-  height: auto;
-  /* margin: 5vh; */
-}
-
-#projets {
-  width: 150vh;
-  height: auto;
-}
-#boutonsLiens {
-  background-color: #ffc703;
-  color: #27587e;
-}
-#projects {
-  justify-content: center;
-}
-footer {
-  background-color: #27587e;
-}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
