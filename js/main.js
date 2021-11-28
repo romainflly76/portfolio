@@ -14,6 +14,16 @@ let infos = [
   "Projet site web Fan Star Wars, utilisation de AJAX API Swapi",
   "Debut de formation, Utilisation de CSS sans Bootstrap",
 ];
+
+let links = [
+  "https://romainflly76.github.io/bank/",
+  "https://romainflly76.github.io/Memory-jeu-des-paires/",
+  "https://romainflly76.github.io/NorImmo/",
+  "https://romainflly76.github.io/PROXI_PREAUX_76/",
+  "https://romainflly76.github.io/swapi/",
+  "#",
+];
+
 console.log(infos);
 console.log(imgSites);
 
@@ -29,7 +39,7 @@ function projets() {
             <img class="card-img-top" src="${sourceCards}" alt="Card image cap">
       <div class="card-body">
       <h5 class="card-title">${infos[i]}</h5>
-        <a href="#" id= "boutonsLiens" class="btn">Go somewhere</a>
+        <a href="${links[i]}" target="blank" id= "boutonsLiens" class="btn">Visitez</a>
       </div>
     </div>
     </div>`;
@@ -41,7 +51,7 @@ projets();
 
 let displayNavbar = document.getElementById("relative");
 displayNavbar.innerHTML += `<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-<div class="container px-4 px-lg-5">
+<div class="container-fluid">
   <a id="name" class="navbar-brand text-white" href="#page-top">Romain Leboiteux</a>
   <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
     data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -49,8 +59,8 @@ displayNavbar.innerHTML += `<nav class="navbar navbar-expand-lg navbar-light fix
   <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav ms-auto my-2 my-lg-0">
       <li class="nav-item"><a class="nav-link text-white" href="index.html">Portfolio</a></li>
-      <li class="nav-item"><a class="nav-link text-white" href="#projets">Mon Profil</a></li>
-      <li class="nav-item"><a class="nav-link text-white" href="#contact">Mes Projets</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#profil">Mon Profil</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#projects">Mes Projets</a></li>
       <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -67,3 +77,13 @@ window.onscroll = function () {
     document.getElementById("mainNav").style.padding = "90px 10px";
   }
 };
+
+let contacter = document.getElementById("contact");
+contacter.innerHTML +=
+  ' <h2 class="text-center">Pour me contacter</h2>\
+<hr class="divider" />\
+<div class="container">\
+ <form class="form-inline" action="https://formsubmit.co/romain.leboiteux@gmail.com" method="POST">\
+<div class="form-group"><input id="nom" class="form-control-lg" type="text" name="name" placeholder="Entrez votre nom" required>\
+<input id="mail" class="form-control-lg mt-2" type="email" name="email" placeholder="Entrez votre mail" required>\
+<button type="button" class="btn btn-light btn-lg m-5">envoyer</button></div></form></div>';

@@ -181,7 +181,10 @@ main {
   background-color: #ffc703;
   color: #27587e;
 }
-
+#pageProfil {
+  background-color: #27587e;
+  color: #ffc703;
+}
 /* *********************** Polices Title / H1, H2, H3, H4, H5, P **************** */
 h1 {
   position: absolute;
