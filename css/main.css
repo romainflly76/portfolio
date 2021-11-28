@@ -122,7 +122,7 @@ textarea {
   left: 0;
   right: 0;
   margin: auto;
-  width: 30%;
+  width: 35%;
   height: auto;
 }
 #name {
@@ -235,7 +235,7 @@ footer .fab {
 }
 
 /* ***********************Regles Media Querries ****************** */
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 385px) {
   #absolute {
     position: absolute;
     top: 30%;
